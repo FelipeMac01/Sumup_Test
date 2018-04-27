@@ -1,0 +1,6 @@
+framework module Pods_ApplePaySwag {
+  umbrella header "Pods-ApplePaySwag-umbrella.h"
+
+  export *
+  module * { export * }
+}

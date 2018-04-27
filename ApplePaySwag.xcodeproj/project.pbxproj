@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16A348529C1CA4DC2CDB7D5D /* Pods_ApplePaySwag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBA61A3DABE0A3D073067B8 /* Pods_ApplePaySwag.framework */; };
+		544003D120913DA50060C469 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003D020913DA50060C469 /* Receipt.swift */; };
+		544003D320913F180060C469 /* Transaction_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003D220913F180060C469 /* Transaction_data.swift */; };
+		544003D520913FF30060C469 /* Merchant_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003D420913FF30060C469 /* Merchant_data.swift */; };
+		544003D72091401B0060C469 /* Card_application_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003D62091401B0060C469 /* Card_application_data.swift */; };
+		544003D9209140630060C469 /* Emv_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003D8209140630060C469 /* Emv_data.swift */; };
+		544003DB209140880060C469 /* Acquirer_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003DA209140880060C469 /* Acquirer_data.swift */; };
+		544003DE209143D60060C469 /* Card_reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003DD209143D60060C469 /* Card_reader.swift */; };
+		544003E02091493F0060C469 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003DF2091493F0060C469 /* Card.swift */; };
+		544003E22091496C0060C469 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003E12091496C0060C469 /* Products.swift */; };
+		544003E42091498F0060C469 /* Vat_rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003E32091498F0060C469 /* Vat_rates.swift */; };
+		544003E6209149B30060C469 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003E5209149B30060C469 /* Location.swift */; };
+		544003E820914A490060C469 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003E720914A490060C469 /* Events.swift */; };
+		544003EA2091555E0060C469 /* Merchant_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003E92091555E0060C469 /* Merchant_profile.swift */; };
+		544003EC209156230060C469 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544003EB209156230060C469 /* Address.swift */; };
+		5446A5FD208D1A96006CAB5C /* ReceiptSwagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446A5FC208D1A96006CAB5C /* ReceiptSwagViewController.swift */; };
+		5B4D9BC919FF3EE4008FB471 /* SwagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D9BC819FF3EE4008FB471 /* SwagCell.swift */; };
+		5BBCC39C19F7421E00412D16 /* Swag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCC39B19F7421E00412D16 /* Swag.swift */; };
+		5BDACB6D19F1AC8D00630D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDACB6C19F1AC8D00630D5D /* AppDelegate.swift */; };
+		5BDACB6F19F1AC8D00630D5D /* SwagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDACB6E19F1AC8D00630D5D /* SwagListViewController.swift */; };
+		5BDACB7119F1AC8D00630D5D /* BuySwagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDACB7019F1AC8D00630D5D /* BuySwagViewController.swift */; };
+		5BDACB7419F1AC8D00630D5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDACB7219F1AC8D00630D5D /* Main.storyboard */; };
+		5BDACB7619F1AC8D00630D5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDACB7519F1AC8D00630D5D /* Images.xcassets */; };
+		5BDACB7919F1AC8D00630D5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDACB7719F1AC8D00630D5D /* LaunchScreen.xib */; };
+		5BDACB8519F1AC8D00630D5D /* ApplePaySwagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDACB8419F1AC8D00630D5D /* ApplePaySwagTests.swift */; };
+		D34263CF170DCF6A85A9926F /* Pods_ApplePaySwagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841EB01821F053CF0D20076 /* Pods_ApplePaySwagTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BDACB7F19F1AC8D00630D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDACB5F19F1AC8C00630D5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDACB6619F1AC8C00630D5D;
+			remoteInfo = ApplePaySwag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BCB8892877F200480EE9C6A /* Pods-ApplePaySwagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePaySwagTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApplePaySwagTests/Pods-ApplePaySwagTests.release.xcconfig"; sourceTree = "<group>"; };
+		544003D020913DA50060C469 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		544003D220913F180060C469 /* Transaction_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction_data.swift; sourceTree = "<group>"; };
+		544003D420913FF30060C469 /* Merchant_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant_data.swift; sourceTree = "<group>"; };
+		544003D62091401B0060C469 /* Card_application_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_application_data.swift; sourceTree = "<group>"; };
+		544003D8209140630060C469 /* Emv_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emv_data.swift; sourceTree = "<group>"; };
+		544003DA209140880060C469 /* Acquirer_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acquirer_data.swift; sourceTree = "<group>"; };
+		544003DD209143D60060C469 /* Card_reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_reader.swift; sourceTree = "<group>"; };
+		544003DF2091493F0060C469 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		544003E12091496C0060C469 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		544003E32091498F0060C469 /* Vat_rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vat_rates.swift; sourceTree = "<group>"; };
+		544003E5209149B30060C469 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		544003E720914A490060C469 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		544003E92091555E0060C469 /* Merchant_profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant_profile.swift; sourceTree = "<group>"; };
+		544003EB209156230060C469 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		5446A5FC208D1A96006CAB5C /* ReceiptSwagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSwagViewController.swift; sourceTree = "<group>"; };
+		5B4D9BC819FF3EE4008FB471 /* SwagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwagCell.swift; sourceTree = "<group>"; };
+		5B9C40791A009BEA00F9576C /* ApplePaySwag-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplePaySwag-Bridging-Header.h"; sourceTree = "<group>"; };
+		5BBCC39B19F7421E00412D16 /* Swag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swag.swift; sourceTree = "<group>"; };
+		5BDACB6719F1AC8D00630D5D /* ApplePaySwag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePaySwag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDACB6B19F1AC8D00630D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDACB6C19F1AC8D00630D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BDACB6E19F1AC8D00630D5D /* SwagListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwagListViewController.swift; sourceTree = "<group>"; };
+		5BDACB7019F1AC8D00630D5D /* BuySwagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySwagViewController.swift; sourceTree = "<group>"; };
+		5BDACB7319F1AC8D00630D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BDACB7519F1AC8D00630D5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5BDACB7819F1AC8D00630D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5BDACB7E19F1AC8D00630D5D /* ApplePaySwagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePaySwagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDACB8319F1AC8D00630D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDACB8419F1AC8D00630D5D /* ApplePaySwagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaySwagTests.swift; sourceTree = "<group>"; };
+		7EBA61A3DABE0A3D073067B8 /* Pods_ApplePaySwag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePaySwag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8841EB01821F053CF0D20076 /* Pods_ApplePaySwagTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePaySwagTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0252AC44731A6DC0666C84 /* Pods-ApplePaySwagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePaySwagTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApplePaySwagTests/Pods-ApplePaySwagTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0BEB0E73BFE224F4D3C057C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA938C569157A6596B9C9C78 /* Pods-ApplePaySwag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePaySwag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApplePaySwag/Pods-ApplePaySwag.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD3BE484A4DC125C780A1B8 /* Pods-ApplePaySwag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePaySwag.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApplePaySwag/Pods-ApplePaySwag.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BDACB6419F1AC8C00630D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A348529C1CA4DC2CDB7D5D /* Pods_ApplePaySwag.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDACB7B19F1AC8D00630D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34263CF170DCF6A85A9926F /* Pods_ApplePaySwagTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072A130DC612F17496FC737B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0BEB0E73BFE224F4D3C057C /* libPods.a */,
+				7EBA61A3DABE0A3D073067B8 /* Pods_ApplePaySwag.framework */,
+				8841EB01821F053CF0D20076 /* Pods_ApplePaySwagTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		544003CF20913D830060C469 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				544003D020913DA50060C469 /* Receipt.swift */,
+				544003D220913F180060C469 /* Transaction_data.swift */,
+				544003D420913FF30060C469 /* Merchant_data.swift */,
+				544003D62091401B0060C469 /* Card_application_data.swift */,
+				544003D8209140630060C469 /* Emv_data.swift */,
+				544003DA209140880060C469 /* Acquirer_data.swift */,
+				544003DD209143D60060C469 /* Card_reader.swift */,
+				544003DF2091493F0060C469 /* Card.swift */,
+				544003E12091496C0060C469 /* Products.swift */,
+				544003E32091498F0060C469 /* Vat_rates.swift */,
+				544003E5209149B30060C469 /* Location.swift */,
+				544003E720914A490060C469 /* Events.swift */,
+				544003E92091555E0060C469 /* Merchant_profile.swift */,
+				544003EB209156230060C469 /* Address.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5BDACB5E19F1AC8C00630D5D = {
+			isa = PBXGroup;
+			children = (
+				5BDACB6919F1AC8D00630D5D /* ApplePaySwag */,
+				5BDACB8119F1AC8D00630D5D /* ApplePaySwagTests */,
+				5BDACB6819F1AC8D00630D5D /* Products */,
+				072A130DC612F17496FC737B /* Frameworks */,
+				799723BC68DCCA675D0139D5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5BDACB6819F1AC8D00630D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BDACB6719F1AC8D00630D5D /* ApplePaySwag.app */,
+				5BDACB7E19F1AC8D00630D5D /* ApplePaySwagTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BDACB6919F1AC8D00630D5D /* ApplePaySwag */ = {
+			isa = PBXGroup;
+			children = (
+				5BDACB6C19F1AC8D00630D5D /* AppDelegate.swift */,
+				5BDACB6E19F1AC8D00630D5D /* SwagListViewController.swift */,
+				5BDACB7019F1AC8D00630D5D /* BuySwagViewController.swift */,
+				5446A5FC208D1A96006CAB5C /* ReceiptSwagViewController.swift */,
+				5BDACB7219F1AC8D00630D5D /* Main.storyboard */,
+				5BDACB7519F1AC8D00630D5D /* Images.xcassets */,
+				5BDACB7719F1AC8D00630D5D /* LaunchScreen.xib */,
+				5BDACB6A19F1AC8D00630D5D /* Supporting Files */,
+				5BBCC39B19F7421E00412D16 /* Swag.swift */,
+				5B4D9BC819FF3EE4008FB471 /* SwagCell.swift */,
+				544003CF20913D830060C469 /* Model */,
+				5B9C40791A009BEA00F9576C /* ApplePaySwag-Bridging-Header.h */,
+			);
+			path = ApplePaySwag;
+			sourceTree = "<group>";
+		};
+		5BDACB6A19F1AC8D00630D5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BDACB6B19F1AC8D00630D5D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BDACB8119F1AC8D00630D5D /* ApplePaySwagTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDACB8419F1AC8D00630D5D /* ApplePaySwagTests.swift */,
+				5BDACB8219F1AC8D00630D5D /* Supporting Files */,
+			);
+			path = ApplePaySwagTests;
+			sourceTree = "<group>";
+		};
+		5BDACB8219F1AC8D00630D5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BDACB8319F1AC8D00630D5D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		799723BC68DCCA675D0139D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA938C569157A6596B9C9C78 /* Pods-ApplePaySwag.debug.xcconfig */,
+				FBD3BE484A4DC125C780A1B8 /* Pods-ApplePaySwag.release.xcconfig */,
+				9B0252AC44731A6DC0666C84 /* Pods-ApplePaySwagTests.debug.xcconfig */,
+				4BCB8892877F200480EE9C6A /* Pods-ApplePaySwagTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BDACB6619F1AC8C00630D5D /* ApplePaySwag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDACB8819F1AC8D00630D5D /* Build configuration list for PBXNativeTarget "ApplePaySwag" */;
+			buildPhases = (
+				117C76A1688FC6F63E9B2DC7 /* [CP] Check Pods Manifest.lock */,
+				5BDACB6319F1AC8C00630D5D /* Sources */,
+				5BDACB6419F1AC8C00630D5D /* Frameworks */,
+				5BDACB6519F1AC8C00630D5D /* Resources */,
+				065C22733DA892198AA10ADD /* [CP] Embed Pods Frameworks */,
+				B8F8B0D7176C009BD09EDF5C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplePaySwag;
+			productName = ApplePaySwag;
+			productReference = 5BDACB6719F1AC8D00630D5D /* ApplePaySwag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BDACB7D19F1AC8D00630D5D /* ApplePaySwagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDACB8B19F1AC8D00630D5D /* Build configuration list for PBXNativeTarget "ApplePaySwagTests" */;
+			buildPhases = (
+				FBFE8F8AD7307B1F8A04D024 /* [CP] Check Pods Manifest.lock */,
+				5BDACB7A19F1AC8D00630D5D /* Sources */,
+				5BDACB7B19F1AC8D00630D5D /* Frameworks */,
+				5BDACB7C19F1AC8D00630D5D /* Resources */,
+				8995C540AE7C4EF715FD8ABE /* [CP] Embed Pods Frameworks */,
+				0F738BDB0E28DD48A3718363 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDACB8019F1AC8D00630D5D /* PBXTargetDependency */,
+			);
+			name = ApplePaySwagTests;
+			productName = ApplePaySwagTests;
+			productReference = 5BDACB7E19F1AC8D00630D5D /* ApplePaySwagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BDACB5F19F1AC8C00630D5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					5BDACB6619F1AC8C00630D5D = {
+						CreatedOnToolsVersion = 6.0.1;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 0;
+							};
+						};
+					};
+					5BDACB7D19F1AC8D00630D5D = {
+						CreatedOnToolsVersion = 6.0.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = 5BDACB6619F1AC8C00630D5D;
+					};
+				};
+			};
+			buildConfigurationList = 5BDACB6219F1AC8C00630D5D /* Build configuration list for PBXProject "ApplePaySwag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BDACB5E19F1AC8C00630D5D;
+			productRefGroup = 5BDACB6819F1AC8D00630D5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BDACB6619F1AC8C00630D5D /* ApplePaySwag */,
+				5BDACB7D19F1AC8D00630D5D /* ApplePaySwagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BDACB6519F1AC8C00630D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDACB7419F1AC8D00630D5D /* Main.storyboard in Resources */,
+				5BDACB7919F1AC8D00630D5D /* LaunchScreen.xib in Resources */,
+				5BDACB7619F1AC8D00630D5D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDACB7C19F1AC8D00630D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065C22733DA892198AA10ADD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApplePaySwag/Pods-ApplePaySwag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F738BDB0E28DD48A3718363 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApplePaySwagTests/Pods-ApplePaySwagTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		117C76A1688FC6F63E9B2DC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8995C540AE7C4EF715FD8ABE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApplePaySwagTests/Pods-ApplePaySwagTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8F8B0D7176C009BD09EDF5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApplePaySwag/Pods-ApplePaySwag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFE8F8AD7307B1F8A04D024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BDACB6319F1AC8C00630D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544003D72091401B0060C469 /* Card_application_data.swift in Sources */,
+				544003D320913F180060C469 /* Transaction_data.swift in Sources */,
+				5BDACB7119F1AC8D00630D5D /* BuySwagViewController.swift in Sources */,
+				544003E42091498F0060C469 /* Vat_rates.swift in Sources */,
+				544003D520913FF30060C469 /* Merchant_data.swift in Sources */,
+				544003E6209149B30060C469 /* Location.swift in Sources */,
+				544003E820914A490060C469 /* Events.swift in Sources */,
+				5BDACB6F19F1AC8D00630D5D /* SwagListViewController.swift in Sources */,
+				544003DE209143D60060C469 /* Card_reader.swift in Sources */,
+				5BDACB6D19F1AC8D00630D5D /* AppDelegate.swift in Sources */,
+				544003D9209140630060C469 /* Emv_data.swift in Sources */,
+				544003DB209140880060C469 /* Acquirer_data.swift in Sources */,
+				544003E02091493F0060C469 /* Card.swift in Sources */,
+				544003D120913DA50060C469 /* Receipt.swift in Sources */,
+				544003EC209156230060C469 /* Address.swift in Sources */,
+				5BBCC39C19F7421E00412D16 /* Swag.swift in Sources */,
+				544003E22091496C0060C469 /* Products.swift in Sources */,
+				544003EA2091555E0060C469 /* Merchant_profile.swift in Sources */,
+				5B4D9BC919FF3EE4008FB471 /* SwagCell.swift in Sources */,
+				5446A5FD208D1A96006CAB5C /* ReceiptSwagViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDACB7A19F1AC8D00630D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDACB8519F1AC8D00630D5D /* ApplePaySwagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BDACB8019F1AC8D00630D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDACB6619F1AC8C00630D5D /* ApplePaySwag */;
+			targetProxy = 5BDACB7F19F1AC8D00630D5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BDACB7219F1AC8D00630D5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDACB7319F1AC8D00630D5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BDACB7719F1AC8D00630D5D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDACB7819F1AC8D00630D5D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BDACB8619F1AC8D00630D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BDACB8719F1AC8D00630D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BDACB8919F1AC8D00630D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA938C569157A6596B9C9C78 /* Pods-ApplePaySwag.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = ApplePaySwag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5BDACB8A19F1AC8D00630D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBD3BE484A4DC125C780A1B8 /* Pods-ApplePaySwag.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = ApplePaySwag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5BDACB8C19F1AC8D00630D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0252AC44731A6DC0666C84 /* Pods-ApplePaySwagTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApplePaySwagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplePaySwag.app/ApplePaySwag";
+			};
+			name = Debug;
+		};
+		5BDACB8D19F1AC8D00630D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCB8892877F200480EE9C6A /* Pods-ApplePaySwagTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApplePaySwagTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApplePaySwag.app/ApplePaySwag";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BDACB6219F1AC8C00630D5D /* Build configuration list for PBXProject "ApplePaySwag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDACB8619F1AC8D00630D5D /* Debug */,
+				5BDACB8719F1AC8D00630D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDACB8819F1AC8D00630D5D /* Build configuration list for PBXNativeTarget "ApplePaySwag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDACB8919F1AC8D00630D5D /* Debug */,
+				5BDACB8A19F1AC8D00630D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDACB8B19F1AC8D00630D5D /* Build configuration list for PBXNativeTarget "ApplePaySwagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDACB8C19F1AC8D00630D5D /* Debug */,
+				5BDACB8D19F1AC8D00630D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BDACB5F19F1AC8C00630D5D /* Project object */;
+}
